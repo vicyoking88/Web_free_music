@@ -21,25 +21,25 @@
 		{
 			"nombre": "suave",
 			"ruta": "cuatro.mp3",
-			"reproducciones": 80,
+			"reproducciones": 20,
 			"icono": 2
 		},
 		{
 			"nombre": "contigo",
 			"ruta": "cinco.mp3",
-			"reproducciones": 50,
+			"reproducciones": 250,
 			"icono": 4
 		},
 		{
 			"nombre": "alas",
 			"ruta": "seis.mp3",
-			"reproducciones": 70,
+			"reproducciones": 100,
 			"icono": 1
 		},
 		{
 			"nombre": "verde",
 			"ruta": "siete.mp3",
-			"reproducciones": 60,
+			"reproducciones": 95,
 			"icono": 3
 		},
 		{
