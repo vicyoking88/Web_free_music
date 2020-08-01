@@ -9,49 +9,49 @@
 		{
 			"nombre": "invierno",
 			"ruta": "dos.mp3",
-			"reproducciones": 30,
+			"reproducciones": 10,
 			"icono": 1
 		},
 		{
 			"nombre": "planeta",
 			"ruta": "tres.mp3",
-			"reproducciones": 20,
+			"reproducciones": 10,
 			"icono": 3
 		},
 		{
 			"nombre": "suave",
 			"ruta": "cuatro.mp3",
-			"reproducciones": 20,
+			"reproducciones": 7,
 			"icono": 2
 		},
 		{
 			"nombre": "contigo",
 			"ruta": "cinco.mp3",
-			"reproducciones": 250,
+			"reproducciones": 6,
 			"icono": 4
 		},
 		{
 			"nombre": "alas",
 			"ruta": "seis.mp3",
-			"reproducciones": 100,
+			"reproducciones": 5,
 			"icono": 1
 		},
 		{
 			"nombre": "verde",
 			"ruta": "siete.mp3",
-			"reproducciones": 95,
+			"reproducciones": 4,
 			"icono": 3
 		},
 		{
 			"nombre": "nuevamente",
 			"ruta": "ocho.mp3",
-			"reproducciones": 90,
+			"reproducciones": 3,
 			"icono": 1
 		},
 		{
 			"nombre": "hoy",
 			"ruta": "nueve.mp3",
-			"reproducciones": 40,
+			"reproducciones": 1,
 			"icono": 2
 		}
 	]
