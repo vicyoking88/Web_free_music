@@ -1,0 +1,165 @@
+<!doctype html>
+<!--identifica DTD como html5-->
+<html lang="es">
+<!--indica el idioma del contenido del navegador-->
+
+<!--encabezado provee informacion de metadatos eje: titulos - enlaces - hojas de estilo-->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!--indicamos al navegador el tipo de codificacion que se usara-->
+  <!--agregamos la etiqueta viwport para que el contenido se addapte a diferentes pantallas o resoluciones-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>OYE</title>
+  <!--titulo de la pagina el cual aparecera en la pestaña del navegador-->
+</head>
+
+<body>
+
+
+  <!--semtantica navegacion de la web-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-2">
+    <div class="container-fluid">
+
+
+      <!--barra de navegacion-->
+      <header>
+        <!--etiqueta semantica dontiene la cabecera de la pagina-->
+
+        <a class="navbar-brand" href="index.html">
+          <p class="titulo"><img src="images/logo.png" alt="image">
+            OYE</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </header>
+
+      <div class="collapse navbar-collapse" id="barra">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="precios.html">Canciones</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="login.html" data-toggle="modal"
+              data-target="#infoContacto">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Inicio De Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!--contenido o seccion de la pagina-->
+    <section>
+      <!---------------------------------------------------------->
+      <!--codigo ventana modal contacto-->
+      <article>
+        <div class="modal" tabindex="-1" role="dialog" id="infoContacto">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Contacto</h5>
+                <!--boton para cerrar la ventana modal-->
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!--este es el cuerpo de la modal-->
+              <div class="modal-body">
+                <p>vamedinac@icloud.com</p>
+                <p>+57 317 22 89 078</p>
+              </div>
+              <!--pie o parte inferior de la modal-->
+              <div class="modal-footer">
+                <!--aqui adicionamos un boton de cerrar y de guardar-->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+      <!------------------------------------------------------------->
+      <!--codigo login-->
+      <div class="container py-4">
+        <form class="form-signin">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-0 col-md-3"></div>
+              <div class="col col-md-6">
+                <h2>Inicio de Sesión</h2>
+                <hr>
+                <label for="login">Correo Electrónico</label>
+                <input type="email" id="login" class="form-control" name="login" placeholder="Email">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" class="form-control" name="login" placeholder="password">
+                <div class="row">
+                  <div class="col py-4">
+                    <button type="submit" class="btn btn-primary mb-2">Iniciar Sesión</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-0 col-md-3"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <article>
+
+      </article>
+    </section>
+  </main>
+
+
+
+  <!--semantica que contiene el pie de pagina-->
+  <footer class="container-fluid my-5 py-1 bg-secondary text-white">
+    <div class="row">
+      <div class="col text-center">
+        Derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

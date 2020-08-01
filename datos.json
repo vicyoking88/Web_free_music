@@ -51,7 +51,13 @@
 		{
 			"nombre": "hoy",
 			"ruta": "nueve.mp3",
-			"reproducciones": 1,
+			"reproducciones": 16,
+			"icono": 2
+		},
+		{
+			"nombre": "Por Si Estás Con el Pendiente - Voz De Mando",
+			"ruta": "Pendiente.mp3",
+			"reproducciones": 15,
 			"icono": 2
 		}
 	]

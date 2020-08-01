@@ -56,7 +56,12 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="login.html">Contacto</a>
+          <li class="nav-item"> <a 
+            class="nav-link" 
+            href="login.html"
+            data-toggle="modal"
+            data-target="#infoContacto"
+            >Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Inicio De Sesión</a>
@@ -69,9 +74,40 @@
     </div>
   </nav>
 
+  <!--CONTENIDO TODA LA WEB PAGINA PRINCIPAL-->
   <main>
     <!--contenido o seccion de la pagina-->
     <section>
+      <!---------------------------------------------------------->
+      <!--codigo ventana modal contacto-->
+      <article>
+        <div class="modal" tabindex="-1" role="dialog" id="infoContacto">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+  
+              <div class="modal-header">
+                <h5 class="modal-title">Contacto</h5>
+                <!--boton para cerrar la ventana modal-->
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!--este es el cuerpo de la modal-->
+              <div class="modal-body">
+                <p>vamedinac@icloud.com</p>
+                <p>+57 317 22 89 078</p>
+              </div>
+              <!--pie o parte inferior de la modal-->
+              <div class="modal-footer">
+                <!--aqui adicionamos un boton de cerrar y de guardar-->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+  
+            </div>
+          </div>
+      </div>
+      </article>
+      <!------------------------------------------------------------->
       <!--para delimintar contendio independiente-->
       <article>
         <!--creamos un contenedor-->
