@@ -112,16 +112,21 @@
               <div class="col col-md-6">
                 <h2>Inicio de Sesión</h2>
                 <hr>
+
                 <label for="login">Correo Electrónico</label>
-                <input type="email" id="login" class="form-control" name="login" placeholder="Email">
+                <input type="text" name="email" id="email" class="form-control"  placeholder="Email">
+                <div id="errorEmail" class="error text-danger"></div>
 
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" class="form-control" name="login" placeholder="password">
+                <input type="password" name="password" id="password" class="form-control" placeholder="password">
+                <div id="errorPassword" class="error text-danger mb-4"></div>
+
                 <div class="row">
                   <div class="col py-4">
-                    <button type="submit" class="btn btn-primary mb-2">Iniciar Sesión</button>
+                    <button type="submit" class="btn btn-primary mb-2" onclick="return validarLogin(this.form)">Iniciar Sesión</button>
                   </div>
                 </div>
+
               </div>
               <div class="col-0 col-md-3"></div>
             </div>
