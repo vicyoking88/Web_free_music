@@ -51,7 +51,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="canciones.html">Canciones</a>
           </li>
         </ul>
@@ -59,7 +59,7 @@
           <li class="nav-item"> <a class="nav-link" href="login.html" data-toggle="modal"
               data-target="#infoContacto">Contacto</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="login.html">Inicio De Sesión</a>
           </li>
           <li class="nav-item">
@@ -70,6 +70,7 @@
     </div>
   </nav>
 
+  <!--CONTENIDO TODA LA WEB PAGINA PRINCIPAL-->
   <main>
     <!--contenido o seccion de la pagina-->
     <section>
@@ -103,67 +104,85 @@
         </div>
       </article>
       <!------------------------------------------------------------->
-      <!--codigo login-->
-      <div class="container py-4">
-        <form class="form-signin">
+
+      <div class="container mt-4">
+        <h1>Canciones</h1>
+        <form>
+          <!--para que bootstrap le aplique estilos usamos el div con la clase-->
           <div class="form-group">
-            <div class="row">
-              <div class="col-0 col-md-3"></div>
-              <div class="col col-md-6">
-                <h2>Inicio de Sesión</h2>
-                <hr>
-
-                <label for="login">Correo Electrónico</label>
-                <input type="text" name="email" id="email" class="form-control"  placeholder="Email">
-                <div id="errorEmail" class="error text-danger"></div>
-
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="password">
-                <div id="errorPassword" class="error text-danger mb-4"></div>
-
-                <div class="row">
-                  <div class="col py-4">
-                    <button type="submit" class="btn btn-primary mb-2" onclick="return validarLogin(this.form)">Iniciar Sesión</button>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-0 col-md-3"></div>
-            </div>
+            <label for="correo">Canciones</label>
+            <input type="email" class="form-control" id="correo" placeholder="Buscar..." />
           </div>
         </form>
+       
+
+        <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+
+
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center">
+                <img src="images/icon_4.svg" alt="logo 4" width='100'>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">vive</h5>
+                <audio src="songs/uno.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center">
+                <img src="images/icon_1.svg" alt="logo 1" width='100'>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">invierno</h5>
+                <audio src="songs/dos.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center">
+                <img src="images/icon_3.svg" alt="logo 3" width='100'>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">planeta</h5>
+                <audio src="songs/tres.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <article>
-
-      </article>
-    </section>
-  </main>
 
 
+      <!--semantica que contiene el pie de pagina-->
+      <footer class="container-fluid my-5 py-1 bg-secondary text-white">
+        <div class="row">
+          <div class="col text-center">
+            Derechos reservados
+          </div>
+        </div>
+      </footer>
 
-  <!--semantica que contiene el pie de pagina-->
-  <footer class="container-fluid my-5 py-1 bg-secondary text-white">
-    <div class="row">
-      <div class="col text-center">
-        Derechos reservados
-      </div>
-    </div>
-  </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-
-  <script src="js/scriptL.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/scriptC.js"></script>
 
 </body>
 
