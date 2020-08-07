@@ -1,6 +1,8 @@
 
 //buscar canciones
-function cargarCanciones(busca) {
+function cargarCanciones(buscando) {
+
+  var busca = buscando.toLowerCase();
 
   $.ajax({
     url: "http://127.0.0.1:5500/datos.json"
@@ -32,7 +34,7 @@ function cargarCanciones(busca) {
           "</div>" +
           "<div class='card-body'>" +
           "<h5 class='card-title text-center'>" + (todasCanciones['canciones'][i]['nombre']) + "</h5>" +
-          "<audio src='songs/" + (todasCanciones['canciones'][i]['ruta']) + "' controls></audio>" +
+          "<audio onplay='conteoTop()' src='songs/" + (todasCanciones['canciones'][i]['ruta']) + "' controls></audio>" +
           "</div>" +
           "</div>";
         resulCanciones.appendChild(newDiv);
@@ -59,3 +61,8 @@ function limpiarBusqueda() {
 }
 
 cargarCanciones("");
+
+//conteo de reproducciones
+function conteoTop (){
+  alert("reproduccion en curso");
+}

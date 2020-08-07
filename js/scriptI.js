@@ -9,7 +9,7 @@ function cargarTop3() {
     if (peticion.status == 200) {
       //console.log('peticion.response: ', peticion.response);
       var datos = JSON.parse(peticion.response)
-      //console.log(maxRepro(datos));
+      console.log(datos);
       //cargamos los top 3 en un array
       var topAll = maxRepro(datos);
 
@@ -19,19 +19,19 @@ function cargarTop3() {
       document.getElementById("top1").innerHTML = datos['canciones'][topAll[1]]['nombre'];
       //cargamos al dom la repruduccion de la primera cancion
       document.getElementById("top1C").innerHTML =
-        "<audio src=" + "songs/" + datos['canciones'][topAll[1]]['ruta'] + " controls></audio>";
+        "<audio onplay='conteoTop()' src=" + "songs/" + datos['canciones'][topAll[1]]['ruta'] + " controls></audio>";
 
       //cargamos al dom nombre segunda cancion
       document.getElementById("top2").innerHTML = datos['canciones'][topAll[3]]['nombre'];
       //cargamos al dom la repruduccion de la segunda cancion
       document.getElementById("top2C").innerHTML =
-        "<audio id="+"repro"+" src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
+        "<audio onplay='conteoTop()' src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
 
       //cargamos al dom nombre tercera cancion
       document.getElementById("top3").innerHTML = datos['canciones'][topAll[5]]['nombre'];
       //cargamos al dom la repruduccion de la tercera cancion
       document.getElementById("top3C").innerHTML =
-        "<audio src=" + "songs/"+datos['canciones'][topAll[5]]['ruta']+" controls></audio>";
+        "<audio onplay='conteoTop()' src=" + "songs/"+datos['canciones'][topAll[5]]['ruta']+" controls></audio>";
     }
   }
   peticion.send();
@@ -63,13 +63,9 @@ function maxRepro(datos) {
   return aRepro;
 }
 
-$(document).ready(function () {
-
-$( "#repro" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-
-});
+function conteoTop (){
+  alert("reproduccion en curso");
+}
 
 
 
