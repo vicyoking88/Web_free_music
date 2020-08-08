@@ -25,50 +25,35 @@
 
 <body>
 
+  <header>
 
-  <!--semtantica navegacion de la web-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-2">
-    <div class="container-fluid">
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
 
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="d-inline-block align-top" alt="LOGO OYE">
+        OYE
+      </a>
 
-      <!--barra de navegacion-->
-      <header>
-        <!--etiqueta semantica dontiene la cabecera de la pagina-->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand" href="index.html">
-          <p class="titulo"><img src="images/logo.png" alt="image">
-            OYE</p>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav mr-auto ml-auto text-center">
+          <a class="nav-item nav-link" href="index.html">Inicio</a>
+          <a class="nav-item nav-link" href="canciones.html">Canciones</a>
 
-      </header>
-
-      <div class="collapse navbar-collapse" id="barra">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="canciones.html">Canciones</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="login.html" data-toggle="modal"
-              data-target="#infoContacto">Contacto</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="login.html">Inicio De Sesión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registro.html">Registro</a>
-          </li>
-        </ul>
+        </div>
+        <div class="justify-content-center d-flex flex-row">
+          <a class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#infoContacto">Contacto</a>
+          <a class="btn btn-outline-primary mr-2 active" href="login.html">Inicio De Sesión</a>
+          <a class="btn btn-outline-primary" href="registro.html">Registro</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main>
     <!--contenido o seccion de la pagina-->
@@ -108,8 +93,8 @@
         <form class="form-signin">
           <div class="form-group">
             <div class="row">
-              <div class="col-0 col-md-3"></div>
-              <div class="col col-md-6">
+              
+              <div class="mr-auto ml-auto col-12 col-sm-9 col-md-7 col-lg-5">
                 <h2>Inicio de Sesión</h2>
                 <hr>
 
@@ -128,7 +113,7 @@
                 </div>
 
               </div>
-              <div class="col-0 col-md-3"></div>
+              
             </div>
           </div>
         </form>
@@ -143,9 +128,10 @@
 
 
   <!--semantica que contiene el pie de pagina-->
-  <footer class="container-fluid my-5 py-1 bg-secondary text-white">
+  <footer class="container-fluid my-5 py-1">
     <div class="row">
-      <div class="col text-center">
+      <div class="col">Comparte Musica</div>
+      <div class="col text-right">
         Derechos reservados
       </div>
     </div>

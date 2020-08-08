@@ -25,15 +25,15 @@ function cargarCanciones(buscando) {
         //document.getElementById("tCanciones").innerHTML=
         var resulCanciones = document.getElementById("tCanciones");
         var newDiv = document.createElement("div"); //cada vez que recorra el for creamos un div nuevo
-        newDiv.className = "col col-md-4"
+        newDiv.className = "col-12 col-sm-6 col-md-4"
         newDiv.innerHTML =
 
-          "<div class='card'>" +
-          "<div class='card-header text-center'>" +
+          "<div class='card text-center'>" +
+          "<div class='card-header'>" +
           "<img src='images/icon_" + (todasCanciones['canciones'][i]['icono']) + ".svg' alt='logo 4' width='100'>" +
           "</div>" +
           "<div class='card-body'>" +
-          "<h5 class='card-title text-center'>" + (todasCanciones['canciones'][i]['nombre']) + "</h5>" +
+          "<h5 class='card-title'>" + (todasCanciones['canciones'][i]['nombre']) + "</h5>" +
           "<audio onplay='conteoTop()' src='songs/" + (todasCanciones['canciones'][i]['ruta']) + "' controls></audio>" +
           "</div>" +
           "</div>";

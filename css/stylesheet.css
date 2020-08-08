@@ -1,5 +1,16 @@
-.titulo{
-  font-size: 45px;
+.textoC{
+ color:#3e432e;
+  
 }
-
-
+nav{
+  background-color: #a7d129;
+  /*background-color: #e3f2fd;*/
+}
+footer{
+  background-color: #a7d129;
+  /*background-color: #e3f2fd;*/
+  
+}
+#top3P{
+  color:#616f39;
+}

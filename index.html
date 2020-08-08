@@ -24,60 +24,34 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar sticky-top navbar-light navbar-expand-sm ">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="d-inline-block align-top" alt="LOGO OYE">
+        OYE
+      </a>
 
-  <!--semtantica navegacion de la web-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-2">
-    <div class="container">
-      <!--barra de navegacion-->
-      <header>
-        <!--etiqueta semantica dontiene la cabecera de la pagina-->
-
-        <a class="navbar-brand" href="index.html">
-          <p class="titulo"><img src="images/logo.png" alt="image">
-            OYE</p>
-        </a>
-        <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#barra" 
-        aria-controls="barra"
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        >
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
 
-      </header>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav mr-auto ml-auto text-center">
+          <a class="nav-item nav-link active" href="index.html">Inicio</a>
+          <a class="nav-item nav-link" href="canciones.html">Canciones</a>
 
-
-      <div class="collapse navbar-collapse" id="barra">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="canciones.html">Canciones</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a 
-            class="nav-link" 
-            href="login.html"
-            data-toggle="modal"
-            data-target="#infoContacto"
-            >Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Inicio De Sesión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registro.html">Registro</a>
-          </li>
-        </ul>
+        </div>
+        <div class="justify-content-center d-flex flex-row">
+          <a class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#infoContacto">Contacto</a>
+          <a class="btn btn-outline-primary mr-2" href="login.html">Inicio De Sesión</a>
+          <a class="btn btn-outline-primary" href="registro.html">Registro</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
 
   <!--CONTENIDO TODA LA WEB PAGINA PRINCIPAL-->
   <main>
@@ -89,7 +63,7 @@
         <div class="modal" tabindex="-1" role="dialog" id="infoContacto">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-  
+
               <div class="modal-header">
                 <h5 class="modal-title">Contacto</h5>
                 <!--boton para cerrar la ventana modal-->
@@ -107,10 +81,10 @@
                 <!--aqui adicionamos un boton de cerrar y de guardar-->
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
               </div>
-  
+
             </div>
           </div>
-      </div>
+        </div>
       </article>
       <!------------------------------------------------------------->
       <!--para delimintar contendio independiente-->
@@ -119,7 +93,7 @@
         <div class="container bg-muted">
           <!--creamos una fila-->
           <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
+            <div class="textoC col-md-6">
               <h1>Canciones gratis para la Comunicadad</h1>
               <p>Con este sitio podras escuchar audios de manera libre...</p>
               <button type="button" class="btn btn-primary">Ver Canciones</button>
@@ -132,17 +106,29 @@
                   <li data-target="#ejerCarrusel" data-slide-to="0" class="active"></li>
                   <li data-target="#ejerCarrusel" data-slide-to="1"></li>
                   <li data-target="#ejerCarrusel" data-slide-to="2"></li>
+                  <li data-target="#ejerCarrusel" data-slide-to="3"></li>
+                  <li data-target="#ejerCarrusel" data-slide-to="4"></li>
+                  <li data-target="#ejerCarrusel" data-slide-to="5"></li>
                 </ol>
                 <!-- aqui van las laminas -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/portada.jpeg" class="d-block w-100" />
+                    <img src="images/portada.jpeg" class="imgC d-block w-100" />
                   </div>
                   <div class="carousel-item">
-                    <img src="images/slide_1.jpg" class="d-block w-100" />
+                    <img src="images/slide_1.jpg" class="imgC d-block w-100" />
                   </div>
                   <div class="carousel-item">
-                    <img src="images/slide_2.jpg" class="d-block w-100" />
+                    <img src="images/slide_2.jpg" class="imgC d-block w-100" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide_3.jpg" class="imgC d-block w-100" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide_4.jpg" class="imgC d-block w-100" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide_5.jpg" class="imgC d-block w-100" />
                   </div>
                 </div>
                 <!-- aqui van los botones -->
@@ -157,29 +143,30 @@
               </div>
             </div>
           </div>
-          
+
 
         </div>
-        <div class="container">
-          <hr><!--linea horizontal-->
+        <div class="container" id="top3P">
+          <hr>
+          <!--linea horizontal-->
           <h2 class="text-center">Top 3</h2>
           <hr>
           <div class="row">
-            <div class="col-4">Nombre</div>
-            <div class="col-8">Canción</div>
+            <div class="d-none d-sm-block col-sm-6">Nombre</div>
+            <div class="col-12 col-sm-6">Canción</div>
           </div>
           <hr>
           <div class="row">
-            <div class="col-4 text-primary" id="top1"></div>
-            <div class="col-8" id="top1C"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top1"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top1C"></div>
           </div>
           <div class="row">
-            <div class="col-4 text-primary" id="top2"></div>
-            <div class="col-8" id="top2C"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top2"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top2C"></div>
           </div>
           <div class="row">
-            <div class="col-4 text-primary" id="top3"></div>
-            <div class="col-8" id="top3C"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top3"></div>
+            <div class="col-12 col-sm-6 text-center text-sm-left" id="top3C"></div>
           </div>
         </div>
 
@@ -190,9 +177,10 @@
 
 
   <!--semantica que contiene el pie de pagina-->
-  <footer class="container-fluid my-5 py-1 bg-secondary text-white">
+  <footer class="container-fluid my-5 py-1">
     <div class="row">
-      <div class="col text-center">
+      <div class="col">Comparte Musica</div>
+      <div class="col text-right">
         Derechos reservados
       </div>
     </div>
