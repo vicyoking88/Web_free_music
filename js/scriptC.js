@@ -63,6 +63,9 @@ function limpiarBusqueda() {
 cargarCanciones("");
 
 //conteo de reproducciones
+
 function conteoTop (){
-  alert("reproduccion en curso");
+
+  window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
+   // alert("reproduccion en curso")
 }

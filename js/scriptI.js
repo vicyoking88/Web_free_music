@@ -25,7 +25,7 @@ function cargarTop3() {
       document.getElementById("top2").innerHTML = datos['canciones'][topAll[3]]['nombre'];
       //cargamos al dom la repruduccion de la segunda cancion
       document.getElementById("top2C").innerHTML =
-        "<audio onplay='conteoTop()' src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
+        "<audio onplay='setTimeout(conteoTop,2000);' src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
 
       //cargamos al dom nombre tercera cancion
       document.getElementById("top3").innerHTML = datos['canciones'][topAll[5]]['nombre'];
@@ -63,8 +63,8 @@ function maxRepro(datos) {
   return aRepro;
 }
 
-function conteoTop (){
-  alert("reproduccion en curso");
+function conteoTop (){    
+alert("reproduccion en curso");
 }
 
 

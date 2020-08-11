@@ -38,12 +38,12 @@ function validarForm(formulario){
   }
 
   if (formulario.gMusical.value == "") {
-    document.getElementById("errorGenero").innerText = "Campo obligatorio";
+    document.getElementById("errorGenero").innerText = "Debe Seleccionar un Genero";
     return false;
   }
 
   if (formulario.edad.value == "") {
-    document.getElementById("errorEdad").innerText = "Campo obligatorio";
+    document.getElementById("errorEdad").innerText = "Debe seleccionar un rango de Edad";
     return false;
   }
 
@@ -53,7 +53,7 @@ function validarForm(formulario){
     return false;
   }
 
-  alert("Datos enviados");
+  alert("Registro Exitoso");
   return true;
 
 
