@@ -19,19 +19,19 @@ function cargarTop3() {
       document.getElementById("top1").innerHTML = datos['canciones'][topAll[1]]['nombre'];
       //cargamos al dom la repruduccion de la primera cancion
       document.getElementById("top1C").innerHTML =
-        "<audio onplay='conteoTop()' src=" + "songs/" + datos['canciones'][topAll[1]]['ruta'] + " controls></audio>";
+        "<audio src=" + "songs/" + datos['canciones'][topAll[1]]['ruta'] + " controls></audio>";
 
       //cargamos al dom nombre segunda cancion
       document.getElementById("top2").innerHTML = datos['canciones'][topAll[3]]['nombre'];
       //cargamos al dom la repruduccion de la segunda cancion
       document.getElementById("top2C").innerHTML =
-        "<audio onplay='setTimeout(conteoTop,2000);' src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
+        "<audio src=" + "songs/" + datos['canciones'][topAll[3]]['ruta'] + " controls></audio>";
 
       //cargamos al dom nombre tercera cancion
       document.getElementById("top3").innerHTML = datos['canciones'][topAll[5]]['nombre'];
       //cargamos al dom la repruduccion de la tercera cancion
       document.getElementById("top3C").innerHTML =
-        "<audio onplay='conteoTop()' src=" + "songs/"+datos['canciones'][topAll[5]]['ruta']+" controls></audio>";
+        "<audio src=" + "songs/"+datos['canciones'][topAll[5]]['ruta']+" controls></audio>";
     }
   }
   peticion.send();
@@ -61,10 +61,6 @@ function maxRepro(datos) {
     }
   }
   return aRepro;
-}
-
-function conteoTop (){    
-alert("reproduccion en curso");
 }
 
 

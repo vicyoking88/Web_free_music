@@ -1,20 +1,21 @@
 
 //buscar canciones
 function cargarCanciones(buscando) {
-
+  limpiarBusqueda();
+  //busca="";
   var busca = buscando.toLowerCase();
+
+  console.log(busca);
 
   $.ajax({
     url: "http://127.0.0.1:5500/datos.json"
   }).done(function (todasCanciones) {
 
-    //busca="";
-    limpiarBusqueda();
-
+    
     for (var i = 0; i < todasCanciones['canciones'].length; i++) {
 
       var nomCancion = todasCanciones['canciones'][i]['nombre'];
-      console.log(busca);
+    
       console.log(nomCancion);
 
       var canCoincide = nomCancion.indexOf(busca);
@@ -34,26 +35,29 @@ function cargarCanciones(buscando) {
           "</div>" +
           "<div class='card-body'>" +
           "<h5 class='card-title'>" + (todasCanciones['canciones'][i]['nombre']) + "</h5>" +
-          "<audio onplay='conteoTop()' src='songs/" + (todasCanciones['canciones'][i]['ruta']) + "' controls></audio>" +
+          "<audio src='songs/" + (todasCanciones['canciones'][i]['ruta']) + "' controls></audio>" +
           "</div>" +
           "</div>";
+
+
         resulCanciones.appendChild(newDiv);
 
       }
 
     }
-
+    
   });
 };
 
 // entrada de busqueda
-$(document).ready(function () {
-
-  $("input.buscar").keypress(function () {
-    cargarCanciones($("#cancionBus").val());
-  })
-
+i = 0;
+$(document).ready(function(){
+  $("input").keyup(function(){
+    cargarCanciones($(".algo").val());
+  });
 });
+
+
 
 // limpiar busqueda
 function limpiarBusqueda() {
@@ -62,10 +66,3 @@ function limpiarBusqueda() {
 
 cargarCanciones("");
 
-//conteo de reproducciones
-
-function conteoTop (){
-
-  window.setTimeout(function() { $(".alert-message").alert('close'); }, 2000);
-   // alert("reproduccion en curso")
-}
