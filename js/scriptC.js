@@ -8,7 +8,7 @@ function cargarCanciones(buscando) {
   console.log(busca);
 
   $.ajax({
-    url: "http://127.0.0.1:5500/datos.json"
+    url: "http://127.0.0.1:5500/Web_free_music/datos.json"
   }).done(function (todasCanciones) {
 
     

@@ -3,7 +3,7 @@ function cargarTop3() {
   var peticion = new XMLHttpRequest();
   // peticion.open('GET', 'datos.json');
   //metodo GET para pedir datos
-  peticion.open('GET', 'http://127.0.0.1:5500/datos.json');
+  peticion.open('GET', 'http://127.0.0.1:5500/Web_free_music/datos.json');
   //funcion que se va a ejecutar cuando los datos lleguen
   peticion.onload = function () {
     if (peticion.status == 200) {
