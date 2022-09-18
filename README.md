@@ -5,7 +5,7 @@ Web de musica gratis. utilizando HTML, CSS, Bootstrap Y Javascript.
 ## Implementation
 
 -   instale la extension en tu VSCode `Live Server` para simular un servidor
--   cambie la url del JSON con la lista de las canciones si asi lo requiere puerto por defecto `http://127.0.0.1:5500/datos.json`
+-   cambie la url del JSON con la lista de las canciones en scriptC.js y scriptl.js si asi lo requiere puerto por defecto `http://127.0.0.1:5500/datos.json`
 -   abrir en index.html presionar clic derecho en el mismo y escoger la opcion `Open with live server` automaticamente correra la aplicacion en tu navegador predeterminado.
 
 ## Note
